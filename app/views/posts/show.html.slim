@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @post.title
+p
+  strong Keywords:
+  = @post.keywords
+p
+  strong Description:
+  = @post.description
+p
+  strong Content:
+  = @post.content
+
+= link_to 'Edit', edit_post_path(@post)
+'|
+= link_to 'Back', posts_path
